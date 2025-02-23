@@ -1,0 +1,172 @@
+.bookForm {
+    background-color:#D4E6E3 ;
+}
+
+.formDiv{
+    margin:10vh auto ;
+    width: 80%;
+    background-color: white;
+    
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #d4e6e3aa;
+}
+
+.img{
+    width: 100%;
+    border-radius: 3px;
+    
+}
+
+.img img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.hd1{
+    text-align: center;
+    font-family:sans-serif ;
+    font-size: 20px;
+    color: rgb(56, 55, 55);
+}
+
+.bRoomForm {
+    padding: 30px 20px;
+}
+
+.bRoomForm > label{
+    color: rgb(65, 65, 65);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 30px 10px 5px 10px  ;
+    display: block;
+}
+
+.guestp{
+    color: rgb(65, 65, 65);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 30px 10px 5px 10px  ;
+    display: block;
+}
+
+
+.ip[type="text"]:hover ,.ip[type="number"]:hover,.ip[type="date"]:hover ,.ip[type="email"]:hover ,.ip[type="password"]:hover {
+    box-shadow: 0 0 0 2px rgba(46, 105, 255, .25);
+    border-color:  rgba(46, 105, 255, .5); 
+}
+
+.ip[type="text"]:focus ,.ip[type="number"]:focus,.ip[type="date"]:focus ,.ip[type="email"]:focus ,.ip[type="password"]:focus  {
+    border-color:#2e69ff; 
+    box-shadow: 0 0 0 3px rgba(46, 105, 255, .25);
+    outline-width: 0;
+}
+
+
+
+.bRoomForm .i1{
+    border: 1.8px solid rgb(192, 191, 191);
+    border-radius: 3.5px ;
+    height: 23px;
+    width: 80%;
+    margin-left: 20px;
+    height: 1.8rem;
+}
+
+
+.d1 {
+    display: flex;
+    align-items: center;
+}
+
+.i2{
+    margin-left: 20px;
+}
+
+
+
+.roomDetails p{
+    color: rgb(65, 65, 65);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.roomDetails label {
+    color: rgb(65, 65, 65);
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.bdiv{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 40px auto ;
+    gap: 5rem;
+    height: 20vh;
+}
+.bdiv button , .bdiv a{
+    flex-basis: 50%;
+    border:#0a1551 1px solid ;
+    background-color: #0a1551;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 5px ;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bdiv button:hover , .bdiv a:hover
+{
+    background-color: #3a4060 ;
+    transition-duration: .5s;
+
+}
+.guestdiv{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: 15vh;
+    margin-left: 10px;
+}
+.llll
+{
+    background-color: rgb(71, 50, 30);
+    padding: 10px;
+    border-radius: 20px;
+}
+.llll:hover
+{
+    background-color: transparent;
+}
+.message {
+    display: none; /* Hide by default */
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+#show-message-new:target , #show-message-old:target  {
+    display: block; /* Show when targeted */
+    margin-top: 10px;
+}
+.llll
+{
+    background-color: #0a1551;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.llll:hover
+{
+    background-color: #2e69ff;
+    transition-duration: .5s ;
+}
+a{
+    text-decoration: none;
+}
