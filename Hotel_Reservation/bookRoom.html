@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room</title>
+    <link rel="stylesheet" href="assets/bookroom.css">
+    <script src="assets/script.js"></script>
+</head>
+
+<body class="bookForm">
+    <div class="formDiv">
+        <div class="img">
+            <img src="assets/images/pic1.png">
+        </div>
+        <div class="hd1">
+            <h1>
+                Hotel Reservation Form
+            </h1>
+            <p style="font-size: 18px;">Please complete the form below.</p>
+            <p style="padding-top:5px ;font-size: 15px;">
+                Your registration will be verified prior to your arrival.
+            </p>
+        </div>
+        <form action="index.html" method="get" class="bRoomForm">
+            <label for="name">
+                Full Name
+            </label>
+            <input class="i1 ip" id="name" name="name" type="text" required>
+
+            <label for="add">
+                Address
+            </label>
+            <input class="i1 ip" id="add" name="add" type="text" required>
+
+            <label for="phone">
+                Phone Number
+            </label>
+            <input class="i1 ip" id="phone" name="phone" type="number" required>
+
+            <label for="mail">
+                Email
+            </label>
+            <input class="i1 ip" id="mail" name="mail" type="email" required>
+
+            <label for="date1">
+                Arrival Date
+            </label>
+            <input class="i1 ip" id="date1" name="date1" type="date" required>
+
+            <label for="date2">
+                Departure Date
+            </label>
+            <input class="i1 ip" id="date2" name="date2" type="date" required>
+
+            <div class="roomDetails">
+                <p>Type Of Room :</p>
+                <div class="d1">
+                    <input id="single" name="roomChoice" class="i2 ip" type="radio">
+                    <label for="single">Junior Suite</label>
+                    <input id="double" name="roomChoice" class="i2 ip" type="radio">
+                    <label for="double">Double Room</label>
+                </div>
+            </div>
+            <p class="guestp">Guest ? </p>
+            <div class="guestdiv">
+                <a href="#show-message-old" class="llll">Old guest</a>
+                <div id="show-message-old" class="message">
+                    Old Guest : Get Promocode : OLD123
+                </div>
+                <a href="#show-message-new" class="llll">new guest</a>
+                <div id="show-message-new" class="message">
+                    New Guest : Get 20% Discount
+                </div>
+            </div>
+            <div class="roomDetails">
+                <p>PAYMENT METHOD</p>
+                <div class="d1">
+                    <input id="credit_card" name="payment_way" value="Credit_card" class="i2 ip" type="radio">
+                    <label for="credit_card">CREDIT-CARD</label>
+                    <input type="radio" id="cash" name="payment_way" value="Cash" class="i2 ip" type="radio">
+                    <label for="cash">CASH</label>
+                </div>
+                <div class="bdiv">
+                    <button type="submit">Book Room</button>
+                    <button type="reset">Reset</button>
+                    <a href="rooms.html">Check Out</a>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
