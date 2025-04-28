@@ -1,0 +1,6 @@
+Product ID:1, Name: Product X, Category: Category X, Stock: 500, Price: 100.0, Supplier: Supplier X, Start Date: Wed Dec 18 20:08:31 EET 2024, Expire Date: Fri Dec 18 20:08:31 EET 2026
+Product ID:2, Name: Product B, Category: Category B, Stock: 300, Price: 150.0, Supplier: Supplier B, Start Date: Wed Dec 18 20:08:31 EET 2024, Expire Date: Fri Dec 18 20:08:31 EET 2026
+com.mycompany.mavenproject.Manger@28a418fc
+com.mycompany.mavenproject.Manger@1f32e575
+com.mycompany.mavenproject.Manger@279f2327
+com.mycompany.mavenproject.Manger@2ff4acd0
