@@ -1,0 +1,36 @@
+<div class="text-center">
+    <h1 class="my-3"> All Posts </h1>
+
+    <section class="my-5">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="fs-5">Id</th>
+                    <th class="fs-5">Title</th>
+                    <th class="fs-5">Description</th>
+                    <th class="fs-5">Date</th>
+                    <th class="fs-5">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let post of posts) { %>
+                    <tr>
+                        <td><%= post._id %></td>
+                        <td><%= post.title %></td>
+                        <td><%= post.desc %></td>
+                        <td><%= post.date.toDateString() %></td>
+                        <td>
+                            <a href="/post/<%=post.id%>" class="btn btn-primary
+                            btn-sm mx-1">show</a>
+                            <a href="/post/edit/<%= post.id %>" class="btn btn-success
+                            btn-sm mx-1">edit</a>
+                            <a href="/post/delete/<%= post.id %>" class="btn btn-danger
+                            btn-sm mx-1">delete</a>
+                        </td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </section>
+   
+</div>
