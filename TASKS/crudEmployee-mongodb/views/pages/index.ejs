@@ -1,0 +1,37 @@
+<div class="text-center">
+    <h1 class="my-3"> All Employees </h1>
+
+    <section class="my-5">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="fs-5">Id</th>
+                    <th class="fs-5">Name</th>
+                    <th class="fs-5">Address</th>
+                    <th class="fs-5">Salarey</th>
+                    <th class="fs-5">Gender</th>
+                    <th class="fs-5">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let employee of employees) { %>
+                    <tr>
+                        <td><%= employee._id %></td>
+                        <td><%= employee.name %></td>
+                        <td><%= employee.address %></td>
+                        <td><%= employee.salarey%></td>
+                        <td><%= employee.gender %></td>
+                        <td>
+                            <a href="/employee/<%=employee.id%>" class="btn btn-primary
+                            btn-sm mx-1">show</a>
+                            <a href="/employee/edit/<%= employee.id %>" class="btn btn-success
+                            btn-sm mx-1">edit</a>
+                            <a href="/employee/delete/<%= employee.id %>" class="btn btn-danger
+                            btn-sm mx-1">delete</a>
+                        </td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </section>
+</div>
