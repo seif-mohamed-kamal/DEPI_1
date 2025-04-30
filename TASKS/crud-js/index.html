@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="bg-dark py-3 text-white fs-5 text-center mt-2 container w-50 mx-auto my-5">Create Course</h1>
+    <section class="container w-50 mx-auto my-5">
+        <div class="container mt-5">
+            <h1>Course List</h1>
+            <form id="courseForm">
+                <input type="hidden" id="editId"> <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="price" name="price" required>
+                </div>
+                <div class="mb-3">
+                    <label for="instructor" class="form-label">Instructor</label>
+                    <input type="text" class="form-control" id="instructor" name="instructor" required>
+                </div>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="desc" name="desc" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Course</button>
+                <button type="button" class="btn btn-secondary" id="cancelEdit" style="display:none;">Cancel</button> </form>
+    
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Instructor</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </section>    
+    <script src="./main.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

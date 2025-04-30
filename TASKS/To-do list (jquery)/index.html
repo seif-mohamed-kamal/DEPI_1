@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stylish To-Do List with Title and Description</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #45a049;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+li {
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    position: relative;
+}
+.task-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+.task-desc {
+    font-size: 15px;
+    color: #666;
+}
+.delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #782424;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.delete:hover {
+    background: #ff0000;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>My To-Do List</h2>
+
+    <input type="text" id="task-title" placeholder="Task Title">
+    <textarea id="task-desc" placeholder="Task Description" rows="3"></textarea>
+    <button id="add-btn">Add Task</button>
+
+    <ul id="todo-list">
+    <!-- Tasks will appear here -->
+    </ul>
+</div>
+
+<script>
+$(document).ready(function() {
+  // Add a new task
+    $('#add-btn').click(function() {
+    let title = $('#task-title').val();
+    let desc = $('#task-desc').val();
+    if(title !== '' && desc !== '') {
+        $('#todo-list').append(`
+        <li>
+            <div class="task-title">${title}</div>
+            <div class="task-desc">${desc}</div>
+            <span class="delete">X</span>
+        </li>
+        `);
+        $('#task-title').val('');
+        $('#task-desc').val('');
+    } else {
+        alert('Please fill out both Title and Description!');
+    }
+    });
+
+  // Delete a task
+$('#todo-list').on('click', '.delete', function() {
+    $(this).parent().remove();
+});
+
+});
+</script>
+
+</body>
+</html>

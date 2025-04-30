@@ -1,0 +1,55 @@
+1...
+[650 , 440 , 120 , 40]
+
+2...
+syntaxError
+
+3...
+syntaxError 
+
+4...
+[59.52, 83.7, 93]
+
+5...
+true
+false
+
+6...
+Error: Assignment to constant variable.
+
+7...
+['Batman', 'Bane']
+
+8...
+number
+String
+undefined
+object
+object
+
+9...
+it will work fine
+
+10...
+Anonymous
+18
+""
+0
+
+11...
+[ 'white', 'black', 'gray' ]
+false
+
+12...
+2
+2
+
+13...
+{ firstName: 'john', lastName: 'doe' }
+undefined
+
+14...
+50
+
+15...
+syntaxError

@@ -1,0 +1,18 @@
+{
+  "courses": [
+    {
+      "id": "61532651-ba87-493a-b51d-16ca2dfb3202",
+      "title": "php",
+      "price": "5000",
+      "instructor": "Seif Mohamed",
+      "desc": "php"
+    },
+    {
+      "id": "a5308708-7c75-4b49-ba34-84b83314f977",
+      "title": "node",
+      "price": "6000",
+      "instructor": "faris",
+      "desc": "node"
+    }
+  ]
+}
