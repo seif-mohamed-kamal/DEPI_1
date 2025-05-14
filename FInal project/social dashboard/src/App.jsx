@@ -6,10 +6,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/pages/Login';
 import Signup from './components/pages/SignUp';
 import ForgetPassword from './components/pages/ForgetPassword';
-import Contact from './components/pages/contact'
-import Home from "./components/pages/home"
-import Edit from "./components/pages/edit"
-import  Create  from './components/pages/create';
+import  Contact  from './components/pages/contact';
 function App() {
   const [userData, setUserData] = useState(null);
   const [isNavCollapsed, setIsNavCollapsed] = useState(false);
@@ -43,23 +40,8 @@ function App() {
               <Contact  />
             </main>
           </>
-        
+
         } />
-        <Route path="/home" element={
-          <>
-            <Navbar onCollapse={setIsNavCollapsed} isCollapsed={isNavCollapsed} />
-            <main className="main-content" style={{ 
-              marginLeft: isNavCollapsed ? '60px' : '150px',
-              transition: 'margin-left 0.3s ease-in-out',
-              padding: '20px'
-            }}>
-              <Home  />
-            </main>
-          </>
-        
-        } />
-      <Route path="Edit/:id" element ={<Edit/>}/>
-      <Route path = "/Create" element ={<Create />}/>
 
       </Routes>
     </div>

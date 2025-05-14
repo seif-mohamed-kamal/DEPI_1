@@ -48,17 +48,7 @@ function Navbar({ onCollapse }) {
                             {!isCollapsed && "Dashboard"}
                         </Link>
                     </li>
-                    <li className="nav-item mb-2">
-                        <Link 
-                            className="nav-link text-white d-flex align-items-center" 
-                            to="/home"
-                            title={isCollapsed ? "Add post" : ""}
-                        >
-                            <i className="bi bi-person me-2"></i>
-                            {!isCollapsed && "Add post"}
-                        </Link>
-                        
-                    </li>
+                    
                     <li className="nav-item mb-2">
                         <Link 
                             className="nav-link text-white d-flex align-items-center" 
